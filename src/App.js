@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './Relogio.css';
 
 function Relogio(){
   // Criando um estado 'Hora' que será inicializado com função Date()
@@ -24,12 +25,10 @@ function Relogio(){
   }, []); // Vazio
 
   return(
-  <div>
-    <h2>Relógio Digital</h2>
-    {/* Mostra o Relógio no formato local ex: '21:05:55' */}
-    {/* LocaleTimeString e a variável de estado "hora" atualiza localmente o horário e faz a contagem por 1000 milisegundos */}
-    <p>A hora atual é: {hora.toLocaleTimeString()}</p>
-  </div>
+  <div className="relogio-container">
+  <h2>Relógio Digital</h2>
+  <p>A hora atual é: {hora.toLocaleTimeString()}</p>
+</div>
   );
 }
 export default Relogio;

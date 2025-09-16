@@ -1,0 +1,32 @@
+/* Relogio.css */
+
+/* Centraliza todo o conteúdo na tela */
+.relogio-container {
+  display: flex;
+  flex-direction: column; /* Título em cima, hora embaixo */
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* ocupa toda a tela */
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44); /* degradê elegante */
+  color: #ffffff; /* texto branco */
+  font-family: 'Courier New', Courier, monospace; /* estilo digital */
+}
+
+/* Estilo do título */
+.relogio-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d2fffa; /* amarelo chamativo */
+  text-shadow: 1px 1px 5px black;
+}
+
+/* Estilo da hora */
+.relogio-container p {
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5); /* fundo escuro translúcido */
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 153, 0.6);
+  letter-spacing: 2px; /* espaçamento entre números */
+}
